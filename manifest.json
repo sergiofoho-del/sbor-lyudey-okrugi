@@ -1,11 +1,17 @@
 {
   "manifest_version": 3,
   "name": "сбор людей округи",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Собирает людей округи из исповедных ведомостей и ревизских сказок Яндекс Архива по списку ссылок: Excel, итоговая таблица, GEDCOM-древо, исправление ошибок.",
   "minimum_chrome_version": "120",
   "action": {
-    "default_title": "Сбор данных из Яндекс Архива"
+    "default_title": "Сбор данных из Яндекс Архива",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "32": "icons/icon32.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
   },
   "background": {
     "service_worker": "background.js"
@@ -22,5 +28,11 @@
   "host_permissions": [
     "https://ya.ru/*",
     "https://yandex.ru/*"
-  ]
+  ],
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
 }
